@@ -2,20 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.bg-gradient-text {
+  background: -webkit-linear-gradient(left, #545cff, #1f2246, #545cff);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes gradient {
+  to {
+    background-position: 200% center;
   }
 }
 
+.animate-out {
+  height: 0 !important;
+}
+
+.origin-bottom {
+  transform-origin: bottom;
+}
+
+.duration-400 {
+  transition-duration: 400ms;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home-page {
+  will-change: opacity;
+}
+
+.velocity-text {
+  font-size: clamp(40px, calc(40px + 110 * (100vw - 576px) / 1024), 150px);
+  line-height: 1.1;
+}
+
+.bg-gradient-sides {
+  background-image: -webkit-radial-gradient(
+      -15% 35%,
+      circle,
+      #545cff 0,
+      transparent 30%
+    ),
+    -webkit-radial-gradient(120% 80%, circle, #545cff 0, transparent 30%);
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
