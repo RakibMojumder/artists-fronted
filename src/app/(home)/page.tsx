@@ -14,6 +14,7 @@ import Experience from "@/components/sections/Experience";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
 import ParallaxImage from "@/components/sections/ParallaxImage";
+import CookiesModal from "@/components/modal/CookiesModal";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,10 +40,11 @@ export default function Home() {
             <ParallaxImage />
             <OurPartners />
             <VelocityText />
-            <OurServices />
             <WorkReviews />
             <Experience />
+            <OurServices />
             <TestimonialSection />
+            <CookiesModal />
           </motion.main>
         )}
       </AnimatePresence>

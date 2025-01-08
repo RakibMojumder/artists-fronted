@@ -133,7 +133,7 @@ const ServiceSection = () => {
           ))}
         </div>
 
-        <div className="my-16 text-neutral-700 h-0.5 w-full"></div>
+        <div className="my-16 bg-neutral-700 h-[1px] w-full"></div>
 
         <div className="flex justify-between items-end">
           <div className="space-y-8">

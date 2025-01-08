@@ -134,9 +134,9 @@ const NavigationModal = ({ isOpen, onClose }: NavigationModalProps) => {
                 <h2 className="text-2xl font-medium text-white">Navigation</h2>
                 <button
                   onClick={onClose}
-                  className="text-white/70 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-white transition-colors bg-neutral-700 rounded-full p-2.5"
                 >
-                  <XIcon className="size-8" />
+                  <XIcon size={20} absoluteStrokeWidth />
                 </button>
               </div>
 

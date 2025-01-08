@@ -25,14 +25,14 @@ const AnimatedButton = ({
     hover: {
       y: -50,
       transition: {
-        duration: 0.2,
+        duration: 0.25,
         ease: [0.33, 1, 0.68, 1],
       },
     },
     appear: {
       y: [50, 0],
       transition: {
-        duration: 0.2,
+        duration: 0.25,
         ease: [0.33, 1, 0.68, 1],
       },
     },

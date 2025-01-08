@@ -44,12 +44,10 @@
 }
 
 .bg-gradient-sides {
-  background-image: -webkit-radial-gradient(
-      -15% 35%,
+  background-image: -webkit-radial-gradient(-15% 35%,
       circle,
       #545cff 0,
-      transparent 30%
-    ),
+      transparent 30%),
     -webkit-radial-gradient(120% 80%, circle, #545cff 0, transparent 30%);
 }
 
@@ -60,6 +58,13 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+.cookies-modal {
+  position: fixed !important;
+  bottom: 40px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 
 /* width */

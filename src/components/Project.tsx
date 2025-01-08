@@ -2,14 +2,14 @@ import { TProject } from "./Projects";
 
 const Project = ({ project, index }: { project: TProject; index: number }) => {
   return (
-    <div className="work-sample group relative h-[450px] min-w-[43.125vw] max-w-[600px] overflow-hidden bg-neutral-200 rounded-[30px] cursor-pointer">
+    <div className="work-sample relative h-[450px] min-w-[43.125vw] max-w-[600px] overflow-hidden bg-neutral-200 rounded-[30px] cursor-pointer border-4 border-white hover:border-primary transition-all duration-500">
       <div
         style={{
           backgroundImage: `url(${project.image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+        className="absolute inset-0 z-0"
       />
 
       <div className="absolute inset-0 bg-black/30 z-10"></div>
